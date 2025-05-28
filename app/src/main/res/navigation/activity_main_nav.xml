@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.emrullaheniscetinkaya.yemeksiparisuygulamas.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/anasayfaDetayGecis"
+            app:destination="@id/detayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.emrullaheniscetinkaya.yemeksiparisuygulamas.ui.fragment.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <argument
+            android:name="yemeklerBundle"
+            app:argType="com.emrullaheniscetinkaya.yemeksiparisuygulamas.data.entity.Yemekler" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.emrullaheniscetinkaya.yemeksiparisuygulamas.ui.fragment.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" >
+        <action
+            android:id="@+id/sepetSplashGecis"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorilerFragment"
+        android:name="com.emrullaheniscetinkaya.yemeksiparisuygulamas.ui.fragment.FavorilerFragment"
+        android:label="fragment_favoriler"
+        tools:layout="@layout/fragment_favoriler" >
+        <action
+            android:id="@+id/favorilerDetayGecis"
+            app:destination="@id/detayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.emrullaheniscetinkaya.yemeksiparisuygulamas.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/splashAnasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>

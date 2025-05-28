@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Anasayfa" />
+    <item
+        android:id="@+id/favorilerFragment"
+        android:icon="@drawable/favoriler"
+        android:title="Favoriler" />
+    <item
+        android:id="@+id/sepetFragment"
+        android:icon="@drawable/sepet_button"
+        android:title="Sepet" />
+</menu>

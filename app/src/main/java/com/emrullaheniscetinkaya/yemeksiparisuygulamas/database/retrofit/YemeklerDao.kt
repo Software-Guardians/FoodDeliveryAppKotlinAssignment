@@ -1,5 +1,6 @@
 package com.emrullaheniscetinkaya.yemeksiparisuygulamas.database.retrofit
 
+import androidx.lifecycle.LiveData
 import com.emrullaheniscetinkaya.yemeksiparisuygulamas.data.entity.CRUDCevap
 import com.emrullaheniscetinkaya.yemeksiparisuygulamas.data.entity.SepetYemeklerCevap
 import com.emrullaheniscetinkaya.yemeksiparisuygulamas.data.entity.YemeklerCevap
@@ -27,7 +28,7 @@ interface YemeklerDao {
 
 
 
-    @POST
+    @POST("yemekler/sepeteYemekEkle.php")
     @FormUrlEncoded
     suspend fun sepeteYemekEkle(
         @Field("yemek_adi")yemek_adi: String,
@@ -38,7 +39,7 @@ interface YemeklerDao {
 
     ): CRUDCevap
 
-    @POST
+    @POST("yemekler/sepettenYemekSil.php")
     @FormUrlEncoded
     suspend fun sepettenYemekSil(
         @Field("sepet_yemek_id")sepet_yemek_id: Int,
