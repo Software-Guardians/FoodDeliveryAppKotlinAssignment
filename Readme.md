@@ -30,6 +30,8 @@
   - Sayfanın alt kısmında toplam tutar gösterilir.  
   - “Siparişi Onayla” butonuna basıldığında bir `Snackbar` çıkar.  
   - Onay verildiğinde kurye animasyonu tekrar gösterilir, sepet boşaltılır ve anasayfaya dönülür.
+- **🌐 API Entegrasyonu (Retrofit)**  
+  Tüm yemek verileri bir REST API'den `Retrofit` kütüphanesi ile çekilmektedir.
 
 ---
 
@@ -57,6 +59,8 @@
   - A “Confirm Order” button shows a `Snackbar`.  
   - If confirmed, the delivery animation plays again, the cart is emptied, and you return to the home screen.
 
+- **🌐 API Integration (Retrofit)**  
+  All meal data is fetched from a REST API using the `Retrofit` library.
 ---
 
 🎨 **Used Technologies**:  
