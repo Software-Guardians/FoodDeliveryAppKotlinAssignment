@@ -59,7 +59,6 @@ class DetayViewModel @Inject constructor(var repository: YemeklerRepository): Vi
 
 
 
-
         }
     }
     }
