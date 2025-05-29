@@ -3,7 +3,7 @@
   <img src="image/ekran1.png" alt="Ekran 1" width="150"/>
   <img src="image/ekran2.png" alt="Ekran 2" width="150"/>
   <img src="image/ekran3.png" alt="Ekran 3" width="150"/>
-  <img src="image/ekran3.png" alt="Ekran 4" width="150"/>
+  <img src="image/ekran4.png" alt="Ekran 4" width="150"/>
   <img src="image/ekran5.png" alt="Ekran 5" width="150"/>
 </p>
 
